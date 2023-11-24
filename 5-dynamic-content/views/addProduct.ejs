@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./includes/head.ejs') %>
+    <body>
+        <%- include('./includes/nav.ejs')%>
+        <main>
+            <form action="/products" method="POST">
+                <input type="text" name="title" />
+                <button type="submit">Add product</button>
+            </form>
+        </main>
+    </body>
+</html>

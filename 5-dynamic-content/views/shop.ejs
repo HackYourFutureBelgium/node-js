@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./includes/head.ejs')%>
+    <body>
+        <%- include('./includes/nav.ejs')%>
+        <main>
+            <h1>My Products</h1>
+            <% if (products.length > 0) { %>
+                <div class="products">
+                    <% products.forEach(product => { %>
+                        <div class="product">
+                            <h1><%= product.title %></h1>
+                            <p><%= product.id %></p>
+                        </div>
+                    <% }); %>
+                </div>
+            <% } %>
+        </main>
+    </body>
+</html>

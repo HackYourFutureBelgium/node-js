@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./includes/head.ejs')%>
+    <body>
+        <%- include('./includes/nav.ejs')%>
+        <main>
+            <h1>My Books</h1>
+            <% if (books.length > 0) { %>
+            <div class="books">
+                <% books.forEach(book => { %>
+                <div class="book">
+                    <h1><%= book.title %></h1>
+                    <p><%= book.id %></p>
+                </div>
+                <% }); %>
+            </div>
+            <% } else { %>
+            <p class="no-book">No book available</p>
+            <%} %>
+        </main>
+    </body>
+</html>

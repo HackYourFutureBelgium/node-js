@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./includes/head.ejs')%>
+    <body>
+        <%- include('./includes/nav.ejs')%>
+        <main>
+            <h1>My Book</h1>
+            <div class="book">
+                <% if(book) { %>
+                <h1><%= book.title %></h1>
+                <p><%= book.id %></p>
+                <% } else{ %>
+                <p>No Book with this <%= id%></p>
+                <% } %>
+            </div>
+        </main>
+    </body>
+</html>
