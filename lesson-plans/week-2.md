@@ -8,4 +8,4 @@
 ## Projects
 
 - Recipes
-- [Template](https://github.com/samirm00/recipes-mysql)
+- [Template](https://github.com/samirm00/express-mysql-template)
