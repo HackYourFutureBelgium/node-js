@@ -1,9 +1,5 @@
 # Understanding the Event Loop in Node.js
 
-## Introduction to Node.js
-
-Node.js is an asynchronous, non-blocking, event-driven JavaScript runtime environment. It is designed to handle high-performance, scalable network applications, making it well-suited for building server-side applications.
-
 ## Unraveling the Event Loop
 
 The event loop is at the heart of Node.js' ability to handle asynchronous operations efficiently. It's a fundamental mechanism that allows Node.js to manage various tasks, respond to events, and execute code concurrently without blocking the main thread. Let's dive into how the event loop works with a clear example:
@@ -43,3 +39,4 @@ Here's a step-by-step breakdown of what's happening:
 ## Source
 
 - [freecodecamp](https://www.freecodecamp.org/news/nodejs-eventloop-tutorial/)
+- [Node.js animated: Event Loop] (https://dev.to/nodedoctors/an-animated-guide-to-nodejs-event-loop-3g62/)

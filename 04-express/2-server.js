@@ -16,7 +16,16 @@ app.use((req, res, next) => {
 
 // routes
 app.get('/', (req, res) => {
-    res.send('<h1>Hello from express</h1>');
+    res.send(`<html>
+    <head></head>
+    <body>
+        <form action="/message" method="POST">
+            <label for="name">Type your name</label>
+            <input id="name" name='name' type="text">
+            <button type="submit">Send</button>
+        </form>
+    </body>
+</html>`);
 });
 
 /*
