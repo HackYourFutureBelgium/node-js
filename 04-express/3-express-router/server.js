@@ -1,18 +1,10 @@
 import express from 'express';
-import bodyParser from 'body-parser';
-
-import adminRoutes from './routes/admin.js';
 import shopRoutes from './routes/shop.js';
 
 // initialize express
 const app = express();
 
-// parse body
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-
 // use routers
-app.use(adminRoutes);
 app.use(shopRoutes);
 
 // handle 404
