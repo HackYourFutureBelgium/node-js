@@ -75,3 +75,4 @@ However, `only authenticated users can add, update, or delete flights`
 - status: ENUM('scheduled', 'departed', 'arrived', 'cancelled')
 - created_at: TIMESTAMP
 - updated_at: TIMESTAMP
+- user_id: INT, Foreign Key (references Users table)
