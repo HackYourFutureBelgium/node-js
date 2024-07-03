@@ -8,7 +8,7 @@
 ## Projects
 
 - Flights
-- [Template](https://github.com/samirm00/express-mysql-template)
+- [Template](https://github.com/HackYourFutureBelgium/node-template)
 
 ## Project Overview
 
