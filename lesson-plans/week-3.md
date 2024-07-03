@@ -41,13 +41,13 @@ However, `only authenticated users can add, update, or delete flights`
 
 ## API Endpoints
 
-### User Authentication
+### User 
 
 - **POST /register**: Register a new user.
 - **POST /login**: Authenticate a user and return a token.
 - **POST /logout**: Log out the authenticated user.
 
-### Recipe Management
+### Recipe
 
 - **GET /flights**: Retrieve a list of all flights.
 - **GET /flights/:id**: Retrieve a single flight by its ID.
@@ -60,7 +60,6 @@ However, `only authenticated users can add, update, or delete flights`
 ### Users Table
 
 - **id**: INT, Primary Key, Auto Increment
-- **username**: VARCHAR(255), Unique
 - **email**: VARCHAR(255), Unique
 - **password**: VARCHAR(255)
 
@@ -72,7 +71,3 @@ However, `only authenticated users can add, update, or delete flights`
 - arrival_airport: VARCHAR(255)
 - departure_time: DATETIME
 - arrival_time: DATETIME
-- status: ENUM('scheduled', 'departed', 'arrived', 'cancelled')
-- created_at: TIMESTAMP
-- updated_at: TIMESTAMP
-- user_id: INT, Foreign Key (references Users table)
