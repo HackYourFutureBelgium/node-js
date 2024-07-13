@@ -32,7 +32,7 @@ To set up an Express application for JWT authentication:
 
 1. Create a new directory for your project and navigate to it in your terminal.
 
-2. Initialize a Node.js project by running `npm init`.
+2. Initialize a Node.js project with ESM by running `npm init es6`.
 
 3. Install Express by running `npm install express --save`.
 
@@ -69,8 +69,12 @@ Before implementing JWT authentication, it's important to create a JWT strategy.
 2. Implement a strategy for verifying incoming JWTs.
 
 ```javascript
+import bodyParser from 'body-parser';
 import jwt from 'jsonwebtoken';
-import expressJwt from 'express-jwt';
+import { expressJwt } from 'express-jwt';
+
+// Parse the request body
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Secret key for JWT signing and verification
 const secretKey = 'your-secret-key';
@@ -136,3 +140,5 @@ JWT authentication is a powerful and widely-used method for securing web applica
 
 - [JWT](https://jwt.io/introduction)
 - [jwt npm](https://www.npmjs.com/package/jsonwebtoken)
+- [What Is JWT and Why Should You Use JWT](https://www.youtube.com/watch?v=7Q17ubqLfaM&t=0s)
+- [JWT Authentication Tutorial - Node.js](https://www.youtube.com/watch?v=mbsmsi7l3r4&t=298s)
