@@ -3,6 +3,8 @@ import jwt from 'jsonwebtoken';
 import { expressjwt } from 'express-jwt';
 import bodyParser from 'body-parser';
 
+const PORT = 5000;
+
 const registeredUsers = [{ username: 'user1', password: 'password1' }];
 
 const app = express();
@@ -22,8 +24,6 @@ app.post('/login', (req, res) => {
     // Check user credentials (username and password)
     // If credentials are valid, issue a JWT
     const { username, password } = req.body;
-
-    console.log(req.body);
 
     if (
         registeredUsers.find(
@@ -51,6 +51,6 @@ app.use((err, req, res, next) => {
     }
 });
 
-app.listen(5000, () => {
-    console.log(`Server is up and running at port : 5000`);
+app.listen(PORT, () => {
+    console.log(`Server is up and running at port : ${PORT}`);
 });
